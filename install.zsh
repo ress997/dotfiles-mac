@@ -66,6 +66,10 @@ mas install 1378283354 # Whalebird
 ### Dev
 mas install 1475387142 # Tailscale
 mas install 1295203466 # Microsoft Remote Desktop
+
+## nextword
+open https://github.com/high-moctane/nextword-data/archive/large.tar.gz
+go install github.com/high-moctane/nextword@latest
 # }}}
 
 # ネットワークドライブで.DS_Store を作成しない
