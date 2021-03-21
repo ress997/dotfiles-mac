@@ -18,54 +18,50 @@ fi
 
 exec zsh -l
 
-## base
-brew install git
-brew install go
-brew install mas
-brew install neovim --HEAD
-brew install zsh
-## base-devel
-brew install bat
-brew install exa
-brew install fd
-brew install fzy
-brew install ghq
-brew install git-delta
-brew install ripgrep
-brew install sd
-brew tap beeftornado/rmtree
+## Gen Brewfile {{{
+cat <<EOF > ~/.Brewfile
+tap "beeftornado/rmtree"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+brew "bat"
+brew "exa"
+brew "fd"
+brew "fzy"
+brew "ghq"
+brew "git"
+brew "git-delta"
+brew "go"
+brew "mas"
+brew "neovim", args: ["HEAD"]
+brew "ripgrep"
+brew "sd"
+brew "zsh"
+cask "alfred"
+cask "appcleaner"
+cask "cmd-eikana"
+cask "discord"
+cask "font-cica"
+cask "font-hackgen"
+cask "font-hackgen-nerd"
+cask "google-chrome"
+cask "iterm2"
+cask "minecraft"
+cask "poi"
+cask "visual-studio-code"
+mas "1Password 7", id: 1333542190
+mas "Magnet", id: 441258766
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Tailscale", id: 1475387142
+mas "The Unarchiver", id: 425424353
+mas "TweetDeck", id: 485812721
+mas "Twitter", id: 1482454543
+mas "Whalebird", id: 1378283354
+EOF
 
-## cask
-brew tap homebrew/cask
-brew install alfred
-brew install appcleaner
-brew install cmd-eikana
-brew install discord
-brew install google-chrome
-### Game
-brew install minecraft
-brew install poi
-### Dev
-brew install iterm2
-brew install visual-studio-code
-
-## Font
-brew tap homebrew/cask-fonts
-brew install font-cica
-brew install font-hackgen
-brew install font-hackgen-nerd
-
-## mas
-mas install 425424353 # The Unarchiver
-mas install 441258766 # Magnet
-mas install 1333542190 # 1Password 7
-### SNS
-mas install 1482454543 # Twitter
-mas install 485812721 # TweetDeck
-mas install 1378283354 # Whalebird
-### Dev
-mas install 1475387142 # Tailscale
-mas install 1295203466 # Microsoft Remote Desktop
+brew bundle --global
+# }}}
 
 ## nextword
 open https://github.com/high-moctane/nextword-data/archive/large.tar.gz
