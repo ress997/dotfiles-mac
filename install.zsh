@@ -37,25 +37,24 @@ brew "mas"
 brew "neovim", args: ["HEAD"]
 brew "ripgrep"
 brew "sd"
+brew "tig"
 brew "zsh"
+cask "1password"
 cask "alfred"
 cask "appcleaner"
-cask "cmd-eikana"
 cask "discord"
-cask "font-cica"
-cask "font-hackgen"
+cask "docker"
 cask "font-hackgen-nerd"
+cask "forklift"
 cask "google-chrome"
 cask "iterm2"
-cask "minecraft"
-cask "poi"
+cask "karabiner-elements"
+cask "krisp"
 cask "visual-studio-code"
-mas "1Password 7", id: 1333542190
 mas "Magnet", id: 441258766
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Tailscale", id: 1475387142
 mas "The Unarchiver", id: 425424353
-mas "TweetDeck", id: 485812721
 mas "Twitter", id: 1482454543
 mas "Whalebird", id: 1378283354
 EOF
